@@ -1,4 +1,4 @@
-const app = require('../billing-backend/src/app');
+const app = require('../billing-backend/src/server');
 const connectDB = require('../billing-backend/src/config/database');
 
 // Export the Vercel serverless function
