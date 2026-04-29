@@ -17,9 +17,7 @@ async function seedAdmin() {
         }
 
         console.log('Connecting to MongoDB...');
-        await mongoose.connect(process.env.MONGODB_URI);
-        console.log('Connected successfully.');
-
+       await mongoose.connect("mongodb+srv://kiranjoshi1649_db_user:kiranjosi2026@cluster0.doapwyv.mongodb.net/test");
         // Check if any admins already exist
         const adminCount = await Admin.countDocuments();
         if (adminCount > 0) {
