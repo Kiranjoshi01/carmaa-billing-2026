@@ -6,7 +6,7 @@ const logger = require('./config/logger');
 const PORT = process.env.PORT || 5001;
 
 // We are hardcoding this to be 100% sure there are no hidden spaces
-const MONGODB_URI  = process.env.MONGODB_URI;;
+const MONGODB_URI = "mongodb+srv://kiranjoshi1649_db_user:kiranjosi2026@cluster0.doapwyv.mongodb.net/test";
 
 mongoose.connect(MONGODB_URI)
   // then(() => {
