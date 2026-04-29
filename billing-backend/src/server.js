@@ -6,7 +6,7 @@ const logger = require('./config/logger');
 const PORT = process.env.PORT || 5001;
 
 // We are hardcoding this to be 100% sure there are no hidden spaces
-const MONGODB_URI = 'mongodb://127.0.0.1:27017/carmaa_billing';
+const MONGODB_URI  = process.env.MONGODB_URI;;
 
 mongoose.connect(MONGODB_URI)
   // then(() => {
